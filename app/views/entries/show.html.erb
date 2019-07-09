@@ -1,7 +1,8 @@
-
-<h2><%= @entry.goal %></h2>
-
-
+<div class="card-large">
+<h3><%= @entry.goal.split.map(&:capitalize).join(' ') %></h3>
 <% @milestones.each do |milestone| %>
-<h3> <%= milestone.title %></h3>
+<h3 style="margin:20px 0px;"> <%= milestone.title.split.map(&:capitalize).join(' ') %></h3>
 <% end %>
+</div>
+<div class="button-large-red" style="text-align:center;">
+<%= link_to "BACK", journals_path %>

@@ -5,7 +5,7 @@
 <div class="container-main grid-main">
 <% @journals.each do |journal| %>
 <div class="card-journal background">
-<h3><%= journal.title %></h3>
+<h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
 </div>
 <% end %>
 </div>
