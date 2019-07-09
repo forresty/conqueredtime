@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'entries/index'
+  get 'entries/show'
+  get 'entries/new'
+  get 'entries/create'
+  get 'journals/index'
+  get 'journals/show'
+  get 'journals/new'
+  get 'journals/create'
   devise_for :users
   root to: 'pages#home'
 

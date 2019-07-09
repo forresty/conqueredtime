@@ -1,0 +1,44 @@
+.form-textfield {
+  height:10vh;
+  background-color:#f4f4f4;
+  width:100%;
+  border:none;
+  font-size:24px;
+  font-weight:200;
+  color:#69585F;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+
+
+input:focus {
+    outline-width: 0;
+}
+
+::placeholder {
+  color:black;
+  font-weight:200;
+  font-size:16px;
+}
+
+.form-submit {
+margin-top:2vh;
+width:100%;
+height:73px;
+border:none;
+background-color: #EF959D;
+color:white;
+font-weight:800;
+font-size:16px;
+border-radius:4px;
+}
+
+.form-submit:hover {
+background-color:#DA888F;
+cursor:pointer;
+}
+
+.form-secondary {
+  margin:0;
+}

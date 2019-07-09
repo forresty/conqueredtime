@@ -1,3 +1,4 @@
+require: 'rubocop-rails'
 AllCops:
   Exclude:
     - 'bin/**/*'
@@ -25,8 +26,6 @@ MutableConstant:
   Enabled: false
 SignalException:
   Enabled: false
-Casecmp:
-  Enabled: false
 CyclomaticComplexity:
   Enabled: false
 MissingRespondToMissing:
@@ -40,4 +39,6 @@ LineLength:
 Style/EmptyMethod:
   Enabled: false
 Bundler/OrderedGems:
+  Enabled: false
+Style/SymbolArray:
   Enabled: false
