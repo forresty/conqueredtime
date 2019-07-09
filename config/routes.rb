@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
 
   resources :pomodoros, only: [:show]
-  resource :profiles, only: [:show, :edit, :update]
+  resources :profiles, only: [:show, :edit, :update]
   resources :entries, only: [:show]
 
 

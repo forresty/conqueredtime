@@ -1,6 +1,15 @@
-
-<div id='time'>
-  <%=
-    timer = Time.now + time_frame - Time.now
-  %>
+<h1>Timer</h1>
+<div id='timer' data-seconds="<%= @remaining_seconds %>">
+  time remaining: <%= @remaining %>
 </div>
+
+<script>
+  const timer = document.getElementById('timer');
+  let remainingSeconds = timer.dataset.seconds;
+  setInterval(() => {
+    const mins = parseInt(remainingSeconds / 60);
+    const seconds = remainingSeconds % 60;
+    timer.innerHTML = `time remaining: ${mins}min ${seconds}sec`;
+    remainingSeconds -= 1;
+  }, 1000);
+</script>
