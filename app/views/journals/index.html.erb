@@ -9,3 +9,10 @@
   <h2>Tomorrow</h2>
 </div>
 </div>
+
+
+<% @journals.each do |journal| %>
+<p>Journal title: <%= journal.title %></p>
+<p> Journal entry: <%= journal.entries.first.goal %></p>
+<p>Journal entry: <%= journal.entries.last.goal %></p>
+<% end %>
