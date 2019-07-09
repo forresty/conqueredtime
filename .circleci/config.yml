@@ -27,6 +27,11 @@ jobs:
             - v1-dependencies-
 
       - run:
+          name: upgrade bundler
+          command: |
+            gem install bundler -v 2.0.2
+
+      - run:
           name: install dependencies
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
