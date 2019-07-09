@@ -1,6 +1,6 @@
 class JournalsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_journal, only: [:show, :update]
+
   def index
     @journals = Journal.all
   end
@@ -31,5 +31,4 @@ class JournalsController < ApplicationController
   def journal_params
     params.require(:journal).permit(:title)
   end
-
 end
