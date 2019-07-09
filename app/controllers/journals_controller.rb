@@ -2,7 +2,7 @@ class JournalsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @journals = Journal.all
+    @journals = current_user.journals
   end
 
   # def show

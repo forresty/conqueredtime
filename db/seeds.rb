@@ -64,6 +64,6 @@ milestone20 = Milestone.create!(title: 'routes', entry_id: 7)
 milestone21 = Milestone.create!(title: 'pages', entry_id: 7)
 
 
-milestone22 = Milestone.create!(title: 'javascript', entry_id: 1)
-milestone23 = Milestone.create!(title: 'css', entry_id: 1)
-milestone24 = Milestone.create!(title: 'animations', entry_id: 1)
+milestone22 = Milestone.create!(title: 'javascript', entry_id: 8)
+milestone23 = Milestone.create!(title: 'css', entry_id: 8)
+milestone24 = Milestone.create!(title: 'animations', entry_id: 8)
