@@ -1,4 +1,3 @@
 import "bootstrap";
-import { timer } from '../components/timer.js';
-
-timer(25);
+import { timer } from "../components/timer.js";
+timer();

@@ -1,4 +1,4 @@
-<h1>Timer</h1>
+<!-- <h1>Timer</h1>
 <div id='timer' data-seconds="<%= @remaining_seconds %>">
   time remaining: <%= @remaining %>
 </div>
@@ -12,4 +12,36 @@
     timer.innerHTML = `time remaining: ${mins}min ${seconds}sec`;
     remainingSeconds -= 1;
   }, 1000);
-</script>
+</script> -->
+
+
+<div id="pomodoro">
+  <div id="clock">
+    <div id="timer">
+      <div id="title">Ready?</div>
+      <div id="countdown">
+        <span id="minutes">01</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls" class="reset">
+        <div id="start"><i class="fas fa-play"></i> Start</div>
+<!--         <div id="pause"><i class="fas fa-pause"></i> Pause</div>
+        <div id="reset"><i class="fas fa-sync-alt"></i> Reset</div> -->
+      </div>
+    </div>
+  </div>
+  <div id="options">
+    <div id="session">
+      <!-- <i id="incrSession" class="fas fa-angle-double-up"></i> -->
+      <span class="option-title">Session</span>
+      <input id="sessionInput" type="number" value="25" max="25" min="25">
+      <!-- <i id="decrSession" class="fas fa-angle-double-down"></i> -->
+    </div>
+    <div id="break">
+      <!-- <i id="incrBreak" class="fas fa-angle-double-up"></i> -->
+      <span class="option-title">Break</span>
+      <input id="breakInput" type="number" value="5" max="5" min="5">
+      <!-- <i id="decrBreak" class="fas fa-angle-double-down"></i> -->
+    </div>
+  </div>
+</div>
