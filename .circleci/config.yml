@@ -68,6 +68,11 @@ jobs:
             ./node_modules/.bin/eslint app
 
       - run:
+          name: stylelint
+          command: |
+            ./node_modules/.bin/stylelint app/**/*.scss
+
+      - run:
           name: erblint
           command: |
             bundle exec erblint app
