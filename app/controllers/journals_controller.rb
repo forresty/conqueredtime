@@ -15,8 +15,9 @@ class JournalsController < ApplicationController
 
   def create
     @journal = Journal.new(journal_params)
+    @journal.user = current_user
     if @journal.save
-      redirect_to journal_path(@journal)
+      redirect_to journal_entries_path(@journal)
     else
       render :new
     end
