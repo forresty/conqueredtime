@@ -6,6 +6,9 @@ Rails.application.routes.draw do
     resources :entries, only: [:index, :new, :create]
   end
 
+resources :entries do
+    resources :milestones, only: [:new, :create]
+  end
 
   resources :milestones do
     resources :pomodoros, only: [:new, :create]
