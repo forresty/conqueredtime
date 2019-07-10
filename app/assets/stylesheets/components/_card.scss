@@ -33,6 +33,7 @@
   background-size:100%;
   background-image:url("https://res.cloudinary.com/doem0zjpf/image/upload/v1562638680/group_3x_jvunnq.png");
   background-repeat:no-repeat;
+
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -78,4 +79,10 @@
   background-color:white;
   color: white;
   transform: rotateY(180deg);
+}
+
+.main-card {
+  height:300px;
+  width:100%;
+  background-color:white;
 }
