@@ -1,18 +1,13 @@
+
+<div class="card-title">
+<h2>My Journals</h2>
+</div>
 <div class="container-main grid-main">
-  <div class="card-journal background">
-    <a>New</a>
-    <h2>Tomorrow</h2>
-  </div>
-
-<div class="card-journal background">
-  <a>New</a>
-  <h2>Tomorrow</h2>
-</div>
-</div>
-
-
 <% @journals.each do |journal| %>
-<p>Journal title: <%= journal.title %></p>
-<p> Journal entry: <%= journal.entries.first.goal %></p>
-<p>Journal entry: <%= journal.entries.last.goal %></p>
+<div class="card-journal background">
+<h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
+</div>
 <% end %>
+</div>
+
+<%= link_to "BACK", root_path, :class => "button-large-red" %>

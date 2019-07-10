@@ -10,7 +10,9 @@
   text-align: center;
 }
 
-
+.hidden {
+  display: none;
+}
 
 input:focus {
     outline-width: 0;

@@ -3,16 +3,24 @@
   width:100%;
   position:relative;
   display:flex;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-weight:400;
   border-radius:4px;
+  background-color:#FFFFFF;
 }
 
-.card-journal h2 {
-  margin-top: 10px;
+.card-title h2 {
+  margin-bottom:40px;
+}
+
+.card-journal h4 {
+  font-weight:200;
+}
+
+.card-journal h3 {
+  margin:0 0 10px 0;
 }
 
 .card-journal a {
@@ -27,6 +35,7 @@
 .background {
   background-size:100%;
   background-image:url("https://res.cloudinary.com/doem0zjpf/image/upload/v1562638680/group_3x_jvunnq.png");
+
 }
 
 .card-journal {
