@@ -12,10 +12,11 @@
 <% end %>
 <% end %>
 <%= link_to root_path do %>
+
     <% @journals.each do |journal| %>
     <div class="flip-card-back">
       <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
-    </div>
+      </div>
     <% end %>
   </div>
 </div>
