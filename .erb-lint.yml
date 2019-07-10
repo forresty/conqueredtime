@@ -1,0 +1,6 @@
+---
+linters:
+  ErbSafety:
+    enabled: false
+  Rubocop:
+    enabled: false
