@@ -1,6 +1,4 @@
 class PomodorosController < ApplicationController
-
-
   def new
     @pomodoro = Pomodoro.new
     @milestone = Milestone.find(params[:milestone_id])
