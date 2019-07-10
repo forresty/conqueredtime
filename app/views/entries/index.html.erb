@@ -1,17 +1,19 @@
-<h1>Entries#index</h1>
-<p>Find me in app/views/entries/index.html.erb</p>
-
 
 <%= simple_form_for [@journal, @entry] do |m| %>
-  <%= m.input :goal %>
+  <%= m.input :goal, :class => "form-textfield" %>
   <%= m.simple_fields_for :milestones do |p| %>
-    <%= p.input :title %>
+    <%= p.input :title, :class => "form-textfield" %>
   <% end %>
-  <%= m.submit %>
+  <%= m.submit "Create", :class => "form-submit"%>
 <% end %>
 
+
 <% @entries.each do |entry| %>
-<p>entry title: <%= entry.goal %></p>
-<p> entry milestone: <%= entry.milestones.first.title %></p>
-<p>entry milestone: <%= entry.milestones.last.title %></p>
+<div class="entries-card">
+<h3 style="font-weight:800; text-transform:uppercase;"><%= entry.goal %></h3>
+<div class="entries-card-milestones">
+<h4> <%= entry.milestones.first.title %></h4>
+<h4><%= entry.milestones.last.title %></h4>
+  </div>
+</div>
 <% end %>
