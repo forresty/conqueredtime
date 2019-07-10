@@ -1,6 +1,6 @@
-
+<h2><%= @journal.title.capitalize %></h2>
 <%= simple_form_for [@journal, @entry] do |m| %>
-  <%= m.input :goal, :class => "form-textfield" %>
+  <%= m.input :goal  %>
   <%= m.simple_fields_for :milestones do |p| %>
     <%= p.input :title, :class => "form-textfield" %>
   <% end %>
@@ -19,3 +19,7 @@
   </div>
 </div>
 <% end %>
+
+<div class="button-large-red" style="text-align:center;">
+<%= link_to "Start your Pomodoro journey!", Pomodoro.first %>
+</div>

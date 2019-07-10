@@ -1,13 +1,16 @@
 .entries-card {
- background-color:white;
+ margin:15px 0px;
+ background-color:#FFFFFF;
  border-radius:4px;
- box-shadow: 0 0 15px rgba(0,0,0,0.2);
  margin:20px;
+ min-height:400px;
+ max-height:400px;
+ box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .entries-card-milestones {
   flex-direction: column;
-  height:162px;
+  height:362px;
   width:100%;
   display: flex;
   justify-content: center;
