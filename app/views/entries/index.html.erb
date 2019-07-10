@@ -1,6 +1,6 @@
-
+<h2><%= @journal.title.capitalize %></h2>
 <%= simple_form_for [@journal, @entry] do |m| %>
-  <%= m.input :goal, :class => "form-textfield" %>
+  <%= m.input :goal  %>
   <%= m.simple_fields_for :milestones do |p| %>
     <%= p.input :title, :class => "form-textfield" %>
   <% end %>

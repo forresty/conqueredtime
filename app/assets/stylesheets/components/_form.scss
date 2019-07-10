@@ -10,6 +10,19 @@
   text-align: center;
 }
 
+.form-control {
+  height:10vh;
+  background-color:#f4f4f4;
+  width:100%;
+  border:none;
+  font-size:24px;
+  font-weight:200;
+  color:#69585F;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+
 .hidden {
   display: none;
 }
@@ -23,6 +36,8 @@ input:focus {
   font-weight:200;
   font-size:16px;
 }
+
+
 
 .form-submit {
 margin-top:2vh;
