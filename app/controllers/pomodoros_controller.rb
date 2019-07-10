@@ -16,14 +16,16 @@ class PomodorosController < ApplicationController
 
   def show
     # time_frame = 25
-    @duration = 25.minutes
+    # @duration = 25.minutes
     @pomodoro = Pomodoro.find(params[:id])
 
-    @remaining_seconds = (@pomodoro.created_at + @duration - Time.now).to_i
+    # @remaining_seconds = (@pomodoro.created_at + @duration - Time.now).to_i
 
-    mins = @remaining_seconds / 60
-    seconds = @remaining_seconds % 60
+    # mins = @remaining_seconds / 60
+    # seconds = @remaining_seconds % 60
 
-    @remaining = "#{mins}min #{seconds}sec"
+    # @remaining = "#{mins}min #{seconds}sec"
+
+    @entry = @pomodoro.milestone.entry
   end
 end

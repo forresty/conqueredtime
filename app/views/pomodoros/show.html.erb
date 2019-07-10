@@ -27,7 +27,7 @@
         <div id="start"><i class="fas fa-play"></i> Start</div>
         <div id="done"><i class="fas fa-check"></i> I am done</div>
         <div id="back">
-          <%= link_to root_path do %>
+          <%= link_to entry_path(@entry) do %>
           <i class="fas fa-chevron-circle-left"></i> To journal
           <% end %>
         </div>
