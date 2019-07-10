@@ -67,6 +67,11 @@ jobs:
           command: |
             ./node_modules/.bin/eslint app
 
+      - run:
+          name: erblint
+          command: |
+            bundle exec erblint app
+
       # run tests!
       # - run:
       #     name: run tests
