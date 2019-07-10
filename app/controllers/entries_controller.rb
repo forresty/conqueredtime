@@ -3,6 +3,8 @@ class EntriesController < ApplicationController
   def index
     @journal = Journal.find(params[:journal_id])
     @entries = @journal.entries
+    @milestone = Milestone.new
+    @entry = Entry.new
   end
 
   def show
@@ -20,7 +22,7 @@ class EntriesController < ApplicationController
     @entry.journal = Journal.find(params[:journal_id])
     @entry.milestone = Milestone.find(params[:milestone][:entry_id])
     @entry.save
-    redirect_to entry_path(@entry)
+    redirect_to :back
   end
 
   private
