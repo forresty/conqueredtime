@@ -5,19 +5,21 @@
 <div class="flip-card">
   <div class="flip-card-inner">
     <% @journals.each do |journal| %>
-      <div class="flip-card-front grid-main card-journal background">
-        <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
-      </div>
-    <% end %>
-  <% end %>
-  <%= link_to root_path do %>
 
-  <% @journals.each do |journal| %>
-    <div class="flip-card-back">
+    <div class="flip-card-front grid-main card-journal background">
       <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
     </div>
-  <% end %>
-</div>
-</div>
 <% end %>
+<% end %>
+
+    <% @journals.each do |journal| %>
+      <%= link_to journal_entries_path(journal) do %>
+    <div class="flip-card-back">
+      <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
+      </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>
+
 <%= link_to "BACK", root_path, :class => "button-large-red" %>

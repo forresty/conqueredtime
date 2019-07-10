@@ -12,8 +12,10 @@
 <div class="entries-card">
 <h3 style="font-weight:800; text-transform:uppercase;"><%= entry.goal %></h3>
 <div class="entries-card-milestones">
-<h4> <%= entry.milestones.first.title %></h4>
-<h4><%= entry.milestones.last.title %></h4>
+  <% entry.milestones.each do |milestone| %>
+<h4 style=";"> <%= milestone.title %></h4>
+<% end %>
+
   </div>
 <% end %>
 <div class="button-large-blue" style="text-align:center;">
