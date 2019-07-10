@@ -1,13 +1,13 @@
 <div class="flex-main">
   <div class="banner-main">
     <h2>Make Your Goals <span class="green-text">Reality</span></h2>
-    <img class="img-artwork vert-move" src="https://res.cloudinary.com/doem0zjpf/image/upload/v1562638680/group_3x_jvunnq.png" alt="">
+    <img class="img-artwork vert-move " src="https://res.cloudinary.com/doem0zjpf/image/upload/v1562638680/group_3x_jvunnq.png" alt="">
   </div>
 
 <form action="/journals" method="post">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <label class="hidden" for="title">Title: </label>
-  <input class="form-textfield" type="text" name="journal[title]" id="title">
+  <input class="form-textfield" type="text" placeholder="Name Your Journal" name="journal[title]" id="title">
 
   <input class="form-submit" value="Begin Your Journey" type="submit">
 </form>
