@@ -8,7 +8,7 @@
 
 
 pierce = User.create!(email: 'pierce@pierce.com', password: '123456', username: 'PIERCE9000', bio: 'Born in Bangalore, I brought the best of India to America where I am focusing on allowing my users to conquer time.  I adopted Benjamin Franklins last name in order to super duper own procrastination.', location: 'Kyoto', age: 25, gender: 'male')
-pierce = User.create!(email: 'pontus@pontus.com', password: '123456', username: 'THE_PONT5000', bio: 'Born in Sweden, I brought the best of Ikea to Kyoto where I am focusing on bringing beauty to even the dullest websites!  I am sick of Ikea and POTUS jokes!', location: 'Kyoto', age: 24, gender: 'male')
+pontus = User.create!(email: 'pontus@pontus.com', password: '123456', username: 'THE_PONT5000', bio: 'Born in Sweden, I brought the best of Ikea to Kyoto where I am focusing on bringing beauty to even the dullest websites!  I am sick of Ikea and POTUS jokes!', location: 'Kyoto', age: 24, gender: 'male')
 
 journal1 = Journal.create!(user_id: 1, title: 'Create Conquered Time!')
 journal2 = Journal.create!(user_id: 2, title: 'Create a super awesome portfolio')
