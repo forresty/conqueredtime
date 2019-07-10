@@ -1,15 +1,14 @@
 
-
 .container-main {
   width:400px;
   margin: 0 auto;
+  height:100%;
 }
 
 .grid-main {
   display:grid;
   grid-template-columns: 1fr;
   grid-gap:20px;
-
 }
 
 .flex-main {
