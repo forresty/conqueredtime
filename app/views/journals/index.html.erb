@@ -1,4 +1,3 @@
-
 <h2>My Journals</h2>
 
 <%= link_to root_path do %>
@@ -6,6 +5,7 @@
 <div class="flip-card">
   <div class="flip-card-inner">
     <% @journals.each do |journal| %>
+
     <div class="flip-card-front grid-main card-journal background">
       <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
     </div>
