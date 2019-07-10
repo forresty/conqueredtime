@@ -65,7 +65,7 @@ jobs:
       - run:
           name: eslint
           command: |
-            eslint app
+            ./node_modules/.bin/eslint app
 
       # run tests!
       # - run:
