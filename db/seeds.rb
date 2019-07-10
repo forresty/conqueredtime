@@ -67,3 +67,6 @@ milestone21 = Milestone.create!(title: 'pages', entry_id: 7)
 milestone22 = Milestone.create!(title: 'javascript', entry_id: 8)
 milestone23 = Milestone.create!(title: 'css', entry_id: 8)
 milestone24 = Milestone.create!(title: 'animations', entry_id: 8)
+
+
+pomodoro1 = Pomodoro.create!(milestone_id: 1)
