@@ -8,3 +8,9 @@
 
   <input type="submit">
 </form>
+
+<% @entries.each do |entry| %>
+<p>entry title: <%= entry.goal %></p>
+<p> entry milestone: <%= entry.milestones.first.title %></p>
+<p>entry milestone: <%= entry.milestones.last.title %></p>
+<% end %>
