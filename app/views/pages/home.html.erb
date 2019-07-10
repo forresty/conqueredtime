@@ -3,11 +3,11 @@
     <h2>Make Your Goals <span class="green-text">Reality</span></h2>
     <img class="img-artwork vert-move" src="https://res.cloudinary.com/doem0zjpf/image/upload/v1562638680/group_3x_jvunnq.png" alt="">
   </div>
-  <div class="form-main">
-    <%= form_for(@journal) do |f| %>
-  <%= f.label :title, :class => "hidden" %>
-  <%= f.text_field :title, :class => "form-textfield", :value => "Name Your Journal..." %>
-  <%= f.submit :value => "Begin Your Journey", :class => "form-submit" %>
-<% end %>
-  </div>
-</div>
+
+<form action="/journals" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="title">Title: </label>
+  <input type="text" name="journal[title]" id="title">
+
+  <input type="submit">
+</form>
