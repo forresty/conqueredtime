@@ -1,11 +1,19 @@
-<div class="container-main grid-main">
-  <div class="card-journal background">
-    <a>New</a>
-    <h2>Tomorrow</h2>
-  </div>
 
-<div class="card-journal background">
-  <a>New</a>
-  <h2>Tomorrow</h2>
+<h2>My Journals</h2>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <% @journals.each do |journal| %>
+    <div class="flip-card-front grid-main card-journal background">
+      <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
+    </div>
+    <% end %>
+
+    <% @journals.each do |journal| %>
+    <div class="flip-card-back">
+      <h3><%= journal.title.split.map(&:capitalize).join(' ') %></h3>
+    </div>
+    <% end %>
+  </div>
 </div>
-</div>
+
+<%= link_to "BACK", root_path, :class => "button-large-red" %>

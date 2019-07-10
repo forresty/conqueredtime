@@ -1,2 +1,8 @@
-<h1>Entries#show</h1>
-<p>Find me in app/views/entries/show.html.erb</p>
+<div class="card-large">
+<h3><%= @entry.goal.split.map(&:capitalize).join(' ') %></h3>
+<% @milestones.each do |milestone| %>
+<h3 style=";"> <%= milestone.title.split.map(&:capitalize).join(' ') %></h3>
+<% end %>
+</div>
+<div class="button-large-red" style="text-align:center;">
+<%= link_to "BACK", journals_path %>

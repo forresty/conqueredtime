@@ -8,7 +8,7 @@
 
 
 pierce = User.create!(email: 'pierce@pierce.com', password: '123456', username: 'PIERCE9000', bio: 'Born in Bangalore, I brought the best of India to America where I am focusing on allowing my users to conquer time.  I adopted Benjamin Franklins last name in order to super duper own procrastination.', location: 'Kyoto', age: 25, gender: 'male')
-pierce = User.create!(email: 'pontus@pontus.com', password: '123456', username: 'THE_PONT5000', bio: 'Born in Sweden, I brought the best of Ikea to Kyoto where I am focusing on bringing beauty to even the dullest websites!  I am sick of Ikea and POTUS jokes!', location: 'Kyoto', age: 24, gender: 'male')
+pontus = User.create!(email: 'pontus@pontus.com', password: '123456', username: 'THE_PONT5000', bio: 'Born in Sweden, I brought the best of Ikea to Kyoto where I am focusing on bringing beauty to even the dullest websites!  I am sick of Ikea and POTUS jokes!', location: 'Kyoto', age: 24, gender: 'male')
 
 journal1 = Journal.create!(user_id: 1, title: 'Create Conquered Time!')
 journal2 = Journal.create!(user_id: 2, title: 'Create a super awesome portfolio')
@@ -64,6 +64,6 @@ milestone20 = Milestone.create!(title: 'routes', entry_id: 7)
 milestone21 = Milestone.create!(title: 'pages', entry_id: 7)
 
 
-milestone22 = Milestone.create!(title: 'javascript', entry_id: 1)
-milestone23 = Milestone.create!(title: 'css', entry_id: 1)
-milestone24 = Milestone.create!(title: 'animations', entry_id: 1)
+milestone22 = Milestone.create!(title: 'javascript', entry_id: 8)
+milestone23 = Milestone.create!(title: 'css', entry_id: 8)
+milestone24 = Milestone.create!(title: 'animations', entry_id: 8)

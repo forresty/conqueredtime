@@ -1,11 +1,13 @@
 class EntriesController < ApplicationController
   before_action :set_entry, only: [:show]
   def index
-    @entries = Entry.all
+    @journal = Journal.find(params[:journal_id])
+    @entries = @journal.entries
   end
 
   def show
-    @milestones = Milestone.all
+    @entry = Entry.find(params[:id])
+    @milestones = @entry.milestones
   end
 
   def new
