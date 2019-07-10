@@ -4,5 +4,4 @@ class PagesController < ApplicationController
   def home
     @journal = Journal.new
   end
-  
 end
