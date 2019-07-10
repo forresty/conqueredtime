@@ -2,11 +2,13 @@
 <p>Find me in app/views/entries/index.html.erb</p>
 
 
- <%= simple_form_for [@milestone, @entry] do |f| %>
-     <%= f.association :name, label: 'Milestone', class: 'form-control-sm' %>
-     <%= f.input :goal, label: 'Entry' %>
-     <%= f.submit %>
-    <% end %>
+<%= simple_form_for [@journal, @entry] do |m| %>
+  <%= m.input :goal %>
+  <%= m.simple_fields_for :milestones do |p| %>
+    <%= p.input :title %>
+  <% end %>
+  <%= m.submit %>
+<% end %>
 
 <% @entries.each do |entry| %>
 <p>entry title: <%= entry.goal %></p>

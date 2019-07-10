@@ -3,8 +3,8 @@ class EntriesController < ApplicationController
   def index
     @journal = Journal.find(params[:journal_id])
     @entries = @journal.entries
-    @milestone = Milestone.new
     @entry = Entry.new
+    @entry.milestones.build
   end
 
   def show
@@ -20,9 +20,8 @@ class EntriesController < ApplicationController
   def create
     @entry = Entry.new(entry_params)
     @entry.journal = Journal.find(params[:journal_id])
-    @entry.milestone = Milestone.find(params[:milestone][:entry_id])
     @entry.save
-    redirect_to :back
+    redirect_back fallback_location: journal_entries_path(@entry.journal)
   end
 
   private
@@ -32,6 +31,6 @@ class EntriesController < ApplicationController
   end
 
   def entry_params
-    params.require(:entry).permit(:goal)
+    params.require(:entry).permit(:goal, milestones_attributes: [:title])
   end
 end
